@@ -25,7 +25,20 @@
         const App = React.createElement('div', null, title, image)
         const root  = document.getElementById('root')
         ReactDOM.render(App, root)
-    </script>
 
+        //JSX
+        //JSX syntax:
+        // const title2 = <div className= 'title2'> React tutorial </div> 
+        //just like html syntax, but to let comouter know this syntax, you must use another tool, one of them is BABEL
+        // to use bable, we add to our html file a CDN link just like react: babeljs.io
+        /*
+        <div className='title'>
+	        react tutorial
+        </div>
+        babel will translate into:
+        // React.createElement("div", {
+        //     className: "title"
+        // }, "react tutorial");
+        */
 </body>
 </html>
