@@ -49,3 +49,24 @@ class polygon {
 }
 const pentagon = new polygon(1,2,3,4,5)
 console.log([...pentagon.getSides()])
+
+
+//bind this
+class Animal{
+    constructor(name){
+        this.name = name
+    }
+    makeNoise(){
+        console.log(`this ${this.name} making noise`)
+    }
+}
+class dog extends Animal{
+    constructor(name){
+        super(name)
+    }
+    bark(){
+        console.log(`this ${this.name} is barking`)
+    }
+}
+let d = new dog('spike')
+d.bark()
