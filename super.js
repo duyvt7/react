@@ -35,4 +35,8 @@ class hero {
         enemy.applyDamage(this.damage)
     }
 }
-
+const A = new hero('A', 100,100)
+const B = new hero ('B', 110, 90)
+A.attackEnemy(B)
+console.log(A)
+console.log(B)
