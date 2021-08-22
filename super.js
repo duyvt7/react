@@ -45,11 +45,9 @@ class rangeHero extends hero{
         super(name, hp, damage)
         this.range = range
     }
-    rangeDamage(range, damage){
-        return this.hp -= (range+damage)
-    }
     rangeAttack(enemy){
-        enemy.rangeDamage(this.range, this.damage)
+        super.attackEnemy(enemy)
+        this.hp += this.range
     }
 }
 const A = new rangeHero(10, 'A',100, 10)
