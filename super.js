@@ -21,3 +21,18 @@ class square extends rectangle {
 }
 let d= new square(2,3)
 console.log(d.calArea())
+
+class hero {
+    constructor(name, hp, damage){
+        this.name = name
+        this.hp = hp
+        this.damage = damage
+    }
+    applyDamage (damage){
+        return this.hp -= damage
+    }
+    attackEnemy(enemy){
+        enemy.applyDamage(this.damage)
+    }
+}
+
