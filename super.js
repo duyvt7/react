@@ -35,8 +35,26 @@ class hero {
         enemy.applyDamage(this.damage)
     }
 }
-const A = new hero('A', 100,100)
-const B = new hero ('B', 110, 90)
-A.attackEnemy(B)
-console.log(A)
+// const A = new hero('A', 100,100)
+// const B = new hero ('B', 110, 90)
+// A.attackEnemy(B)
+// console.log(A)
+// console.log(B)
+class rangeHero extends hero{
+    constructor(range, name, hp , damage){
+        super(name, hp, damage)
+        this.range = range
+    }
+    rangeDamage(range, damage){
+        return this.hp -= (range+damage)
+    }
+    rangeAttack(enemy){
+        enemy.rangeDamage(this.range, this.damage)
+    }
+}
+const A = new rangeHero(10, 'A',100, 10)
+const B = new hero('B', 110, 30)
+A.rangeAttack(B)
+B.attackEnemy(A)
 console.log(B)
+console.log(A)
