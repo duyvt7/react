@@ -46,7 +46,7 @@ class rangeHero extends hero{
         this.range = range
     }
     rangeAttack(enemy){
-        super.attackEnemy(enemy)
+        super.attackEnemy(enemy)// using super to call a method from base class
         this.hp += this.range
     }
 }
