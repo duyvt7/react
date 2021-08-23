@@ -1,0 +1,19 @@
+{
+  "name": "react-coderx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "class.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duyvt7/react-coderX.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duyvt7/react-coderX/issues"
+  },
+  "homepage": "https://github.com/duyvt7/react-coderX#readme"
+}

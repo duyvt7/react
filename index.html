@@ -8,10 +8,15 @@
 
 </head>
 <body>
-    <div id="title">react example</div>
-    <img src="https://sugoi.vn/wp-content/uploads/2020/12/nuiphusi1.hhg_.jpeg" alt="">
+    <!-- <div id="title">react example</div> -->
+    <!-- <img src="https://sugoi.vn/wp-content/uploads/2020/12/nuiphusi1.hhg_.jpeg" alt=""> -->
+    <div id="root"></div>
     <script>
-        let div = 
+        const div = React.createElement('div',{
+            className: 'title',
+        },'react example')
+        const root = document.getElementById('root')
+        ReactDOM.render(div, root)
     </script>
 </body>
 </html>
