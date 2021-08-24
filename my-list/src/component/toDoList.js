@@ -1,11 +1,12 @@
 import React, { Component} from 'react';
-class toDoList extends Component {
+
+class toDoList extends React.Component {
     render() {
         return (
             <div className='toDoList'>
-                <p>a component example</p>
+                a component example
             </div>
         )
     }
 }
-export default toDoList
+export default toDoList;
