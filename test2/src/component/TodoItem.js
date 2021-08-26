@@ -4,7 +4,7 @@ class TodoItem extends Component{
     render() {
         return (
             <div className='App'> 
-                <p>{this.props.title}</p>
+                <p>{this.props.item.title}</p>
             </div>
         )
     }

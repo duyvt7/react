@@ -16,7 +16,7 @@ class App extends Component{
     return (
       <div className='App' >
         {this.ItemList.map((item) => 
-          <TodoItem title={item.title}/>
+          <TodoItem item={item}/>
         )}
       </div>
     )
