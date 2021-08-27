@@ -5,3 +5,7 @@
     color:Black;
     text-decoration: none;
 }
+.TodoItem-complete{
+    opacity:0.3;
+    text-decoration: line-through;
+}

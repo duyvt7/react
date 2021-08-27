@@ -7,7 +7,7 @@ class App extends Component{
   constructor(){
     super();
     this.ItemList= [
-      { title:'go shopping'},
+      { title:'go shopping', isComplete:true},
       { title:'go to school'},
       { title:'go to the supermarket'},
     ]

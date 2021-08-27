@@ -3,8 +3,13 @@ import './TodoItem.css'
 
 class TodoItem extends Component{
     render() {
+        const {item}= this.props
+        let className = 'TodoItem'
+        if (item.isComplete === true){
+            className+= ' TodoItem-complete'
+        }
         return (
-            <div className='TodoItem'> 
+            <div className={className}> 
                 <p>{this.props.item.title}</p>
             </div>
         )
