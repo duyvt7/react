@@ -15,8 +15,8 @@ class App extends Component{
   render(){
     return (
       <div className='App' >
-        {this.ItemList.map((item) => 
-          <TodoItem item={item}/>
+        {this.ItemList.map((item, index) => 
+          <TodoItem key={index} item={item}/>
         )}
       </div>
     )
